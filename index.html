@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" href="style.css">
+  <script src="d3.js"></script>
+  <script src="functionplot.js"></script>
+  <script src="math.js"></script>
+</head>
+
+<body onload = "plotload()">
+
+<div id="console">
+  <center><div id="consoleheader"></div></center>
+  <div>
+    <input id="function" type="text" value="x^2">
+    <div class="keypad-container">
+      <div class="spl-button" onclick="showmenu()">MENU</div>
+      <div class="spl-button" onclick="addplt()">ADDPLT</div>
+      <div class="spl-button" onclick="plot()">PLOT</div>
+      <div class="spl-button" onclick="clrplot()">CLR</div>
+        <div class="keypad-button" onclick="addToInput('1')">1</div>
+        <div class="keypad-button" onclick="addToInput('2')">2</div>
+        <div class="keypad-button" onclick="addToInput('3')">3</div>
+        <div class="keypad-button" onclick="addToInput('+')">+</div>
+        <div class="keypad-button" onclick="addToInput('4')">4</div>
+        <div class="keypad-button" onclick="addToInput('5')">5</div>
+        <div class="keypad-button" onclick="addToInput('6')">6</div>
+        <div class="keypad-button" onclick="addToInput('-')">-</div>
+        <div class="keypad-button" onclick="addToInput('7')">7</div>
+        <div class="keypad-button" onclick="addToInput('8')">8</div>
+        <div class="keypad-button" onclick="addToInput('9')">9</div>
+        <div class="keypad-button" onclick="addToInput('*')">*</div>
+        <div class="keypad-button" onclick="addToInput('0')">0</div>
+        <div class="keypad-button" onclick="addToInput('.')">.</div>
+        <div class="keypad-button" onclick="addToInput('/')">/</div>
+        <div class="keypad-button" onclick="evaluateInput()">=</div>
+        <div class="keypad-button" onclick="addToInput('(')">(</div>
+        <div class="keypad-button" onclick="addToInput(')')">)</div>
+        <div class="skeypad-button" onclick="clearInput()">AC</div>
+        <div class="skeypad-button" onclick="clr()">C</div>
+        <div class="skeypad-button" onclick="addToInput('sin(')">sin</div>
+        <div class="skeypad-button" onclick="addToInput('cos(')">cos</div>
+        <div class="skeypad-button" onclick="addToInput('tan(')">tan</div>
+        <div class="skeypad-button" onclick="addToInput('exp(')">exp</div>
+        <div class="skeypad-button" onclick="addToInput('log(')">log</div>
+        <div class="skeypad-button" onclick="addToInput('x')">X</div>
+        <div class="skeypad-button" onclick="addToInput('3.14')">pi</div>
+        <div class="skeypad-button" onclick="location.reload()">reload</div> 
+    </div>
+  </div>
+</div>
+
+<div id = "menu">
+  <center><div id="menuheader"></div></center>
+  <div id = "der">
+    <label id = "redd"></label>
+    <label id = "blud"></label>
+    <label id = "blkd"></label>
+  </div>
+</div>
+
+<div id="plot">
+    <div id="myFunction"></div>
+</div>
+
+<script src = "consoledrag.js"></script>
+<script src = "script.js"></script>
+<script src = "menufns.js"></script>
+</body>
+</html>

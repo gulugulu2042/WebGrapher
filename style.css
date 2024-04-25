@@ -1,0 +1,162 @@
+@font-face {
+  font-family: 'Rowan-4';
+  src: url('resources/Rowan-4.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'VSOP-3';
+  src: url('resources/VSOP-Regular3.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Kindel';
+  src: url('resources/KindelRounded-Black.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+body{
+  font-family:"Kindel";
+  font-size: 90%;
+  font-weight: lighter;
+}
+
+#console {
+  position: absolute;
+  z-index: 9;
+  background-color: #f1f1f1;
+  text-align: center;
+  border: 1px solid #d3d3d3;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px 0 rgb(122, 122, 122), 0 6px 20px 0 rgb(195, 195, 195);
+}
+
+#consoleheader {
+  margin-top: 5px;
+  cursor: move;
+  z-index: 10;
+  background-color: #d9d9d9;
+  color: #fff;
+  height:5px;
+  overflow: hidden;
+  border-radius: 10px;
+  width: 20px;
+  text-align: center;
+}
+
+#consoleheader:hover{
+  background-color: #9a9a9a;  
+  transition-duration: 50ms;
+}
+
+.keypad-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 5px;
+    margin: 5px;
+    background-color: #f1f1f1;
+}
+
+.keypad-button {
+    text-align: center;
+    vertical-align: center;
+    background-color: #d9d9d9;
+    color: #333333;
+    border: none;
+    text-align: center;
+    font-size: 18px;
+    cursor: pointer;
+    font-weight: bold;
+    border-radius: 5px;
+    overflow: hidden;
+    font-size: 95%;
+    padding: 3px;
+}
+
+.keypad-button:hover{
+  background-color: #bdbdbd;
+  transition-duration: 50ms;
+}
+
+#function {
+    margin: 5px; 
+    border-radius: 40px;
+    border: solid 1px #333333;
+}
+
+.spl-button {
+  text-align: center;
+  vertical-align: center;
+  background-color: #92e981;
+  color: #353535;
+  border: none;
+  text-align: center;
+  font-size: 18px;
+  cursor: pointer;
+  font-weight: bold;
+  border-radius: 5px;
+  overflow: hidden;
+  grid-area: span 1/span 2;
+  padding: 1px;
+}
+
+.spl-button:hover{
+  background-color: #90b08e;
+  transition-duration: 50ms;
+}
+
+#menu{
+  position: absolute;
+  z-index: 7;
+  background-color: #f1f1f1;
+  text-align: center;
+  border: 1px solid #d3d3d3;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px 0 rgb(122, 122, 122), 0 6px 20px 0 rgb(195, 195, 195);
+  display:none; 
+  width: 300px;
+  height: 400px 
+}
+
+#menuheader {
+  margin-top: 5px;
+  cursor: move;
+  z-index: 10;
+  background-color: #d9d9d9;
+  color: #fff;
+  height:5px;
+  overflow: hidden;
+  border-radius: 10px;
+  width: 20px;
+  text-align: center;
+}
+
+#menuheader:hover{
+  background-color: #9a9a9a;  
+  transition-duration: 50ms;
+}
+
+.skeypad-button {
+  text-align: center;
+  vertical-align: center;
+  background-color: #bdbdbd;
+  color: #333333;
+  border: none;
+  text-align: center;
+  font-size: 18px;
+  cursor: pointer;
+  font-weight: bold;
+  border-radius: 5px;
+  overflow: hidden;
+  font-size: 95%;
+  padding: 3px;
+}
+
+.skeypad-button:hover{
+  background-color: #9a9a9a;
+  transition-duration: 50ms;
+}
