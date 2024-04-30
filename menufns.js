@@ -11,5 +11,7 @@ function showmenu(){
 }
 
 function updatemenu(){
-    
+    document.getElementById("redd").innerHTML = parameters.data[0].derivative.fn;
+    document.getElementById("blud").innerHTML = parameters.data[1].derivative.fn;
+    document.getElementById("blkd").innerHTML = parameters.data[2].derivative.fn;    
 }
